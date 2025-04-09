@@ -39,7 +39,7 @@ function App() {
     {
       icon: lv,
       date: 'Server-Side', 
-      title: 'Laravel franmework'
+      title: 'Laravel framework'
     },
     {
       icon: 'https://cdn-icons-png.flaticon.com/512/2103/2103625.png',
@@ -59,7 +59,7 @@ function App() {
     {
       icon: 'https://cdn-icons-png.flaticon.com/512/3063/3063394.png',
       date: 'Website Hacking',
-      title: 'Pentenration Testing'
+      title: 'Pentration Testing'
     },
     {
       icon: 'https://cdn-icons-png.flaticon.com/512/6124/6124995.png',

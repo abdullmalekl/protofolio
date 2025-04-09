@@ -231,11 +231,13 @@
   color: white;
 }
 #Ccards{
-  border: 1px solid black;
+  border: 1px solid #49649c;
+  padding:2%;
 }
 
 @media (max-width: 768px) {
   #Ccards{
-    max-width: 90%;
+    max-width: 98%;
+
   }
 }
