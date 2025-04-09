@@ -58,7 +58,7 @@ const CertificatesGrid = () => {
     return (
         <div  className="min-h-screen bg-gray-100 p-4">
           <div 
-            className="grid grid-cols-1 sm:grid-cols-2 gap-4 min-w-[420px] scroll-smooth"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4 min-w-[440px] scroll-smooth"
             style={{ scrollBehavior: "smooth" }}
           >
             {certificates.map((cert, index) => (
