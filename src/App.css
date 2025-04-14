@@ -241,3 +241,48 @@
 
   }
 }
+
+
+
+.cwen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.column {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(144, 50, 50, 0.1);
+  width: 18%;
+  min-width: 250px;
+}
+
+.item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  text-align: center;
+}
+#cimage{
+  width: 100%;
+  height: 10vh;
+  height: auto;
+  border-radius: 10px;
+}
+.cardTitle{
+  font-size: 1.4rem;
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .column {
+    width: 94%;
+  }
+}

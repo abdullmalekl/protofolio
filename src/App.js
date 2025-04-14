@@ -7,14 +7,23 @@ import lv from './laravel.jpg';
 import rex from './rex.jpg';
 import ccna from './ccna.png';
 import ms from './365.png';
+import ds from './components/images/Data security.png'
 import CertificatesGrid from "./components/CertificatesGrid";
+import ColumnList from './components/Badgeslist';
 import Footer from './components/footer';
+import figma from './components/images/figma.png';
 function App() {
+  
   const items = [
     {
       icon: 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png',
       date: 'frontend',
       title: 'ReactJs'
+    },
+    {
+      icon: figma,
+      date: 'UI/UX design',
+      title: 'Figma'
     },
     {
       icon: rex,
@@ -60,6 +69,12 @@ function App() {
       icon: 'https://cdn-icons-png.flaticon.com/512/3063/3063394.png',
       date: 'Website Hacking',
       title: 'Pentration Testing'
+    },
+    
+    {
+      icon: ds,
+      date: 'Clean backups & Restore',
+      title: 'Data Security'
     },
     {
       icon: 'https://cdn-icons-png.flaticon.com/512/6124/6124995.png',
@@ -113,6 +128,21 @@ I am committed to providing practical solutions that help businesses in their di
 <div className="min-h-screen bg-gray-100">
       <h1 id='cert' className="text-2xl font-bold text-center py-8" >Certifications</h1>
       <CertificatesGrid />
+    </div>
+    <div className='bg-gray-100'>
+    <div id='cert'>
+      <h2 className="section-title">Badges</h2>
+    </div>
+    < ColumnList />
+    </div>
+    <div className='bg-gray-100'>
+   
+      <h2 id='cert' className="section-title">projects</h2>
+      <br/>
+      <h4  className="section-title">
+      This section is currently under construction...Coming soon!
+      </h4>
+
     </div>
     </div>
     <Footer/>
