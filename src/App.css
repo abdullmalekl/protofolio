@@ -309,3 +309,15 @@
     width: 94%;
   }
 }
+.video-title{
+  font-size: 2.4rem;
+  font-family: 'Markazi Text';
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.video-description{
+  font-size: 1.2rem;
+  font-family: 'Markazi Text';
+  color: black;
+  margin-bottom: 10px;
+}

@@ -136,13 +136,30 @@ I am committed to providing practical solutions that help businesses in their di
     < ColumnList />
     </div>
     <div className='bg-gray-100'>
-   
       <h2 id='cert' className="section-title">projects</h2>
-      <br/>
-      <h4  className="section-title">
-      This section is currently under construction...Coming soon!
-      </h4>
-
+      <section id="projects" className="my-12 px-4 md:px-12">
+  <h1 className="video-title">E-Tech</h1>
+  <h2 className="video-description">
+  E-Tech is a technical educational platform focused on the Internet of Things (IoT).
+   It offers training content and practical projects,<br/>
+    along with an integrated cloud environment for real-time device connectivity and control via WebSocket
+  </h2>
+  <div className="flex justify-center">
+    <div className="w-full max-w-3xl">
+      <video
+        controls
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="w-full h-auto rounded-xl shadow-lg"
+      >
+        <source src={`${process.env.PUBLIC_URL}/videos/myproject.mp4`} type="video/mp4" />
+        <p>Your browser does not support HTML5 video. Here is a <a href="/videos/myproject.mp4">link to the video</a> instead.</p>
+      </video>
+    </div>
+  </div>
+</section>
     </div>
     </div>
     <Footer/>
