@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/protofolio/static/css/main.db9f4f7c.css",
-    "main.js": "/protofolio/static/js/main.8f06aca2.js",
+    "main.js": "/protofolio/static/js/main.9f5df9f6.js",
     "static/js/453.235e154e.chunk.js": "/protofolio/static/js/453.235e154e.chunk.js",
     "static/media/wallpaper.jpg": "/protofolio/static/media/wallpaper.a31e1b9876239dc19e20.jpg",
     "static/media/DT.jpg": "/protofolio/static/media/DT.e90478b4b5111b1e3433.jpg",
     "static/media/rapid7.png": "/protofolio/static/media/rapid7.fc3880d48e88ec1bdb03.png",
     "static/media/teamwork.jpg": "/protofolio/static/media/teamwork.078fe4ef97da5c5181ad.jpg",
     "static/media/emailing.jpg": "/protofolio/static/media/emailing.1cd63d52c125ec56891f.jpg",
+    "static/media/C_G.jpg": "/protofolio/static/media/C_G.eed00594d83e17ca9b8c.jpg",
     "static/media/soft_skills.jpg": "/protofolio/static/media/soft_skills.e7a74305ad0a99d3193e.jpg",
     "static/media/ms365.jpg": "/protofolio/static/media/ms365.38a161ba492a1574a15c.jpg",
     "static/media/penTest.jpg": "/protofolio/static/media/penTest.c4a9114d33aa4d3f985d.jpg",
@@ -28,11 +29,11 @@
     "static/media/rex.jpg": "/protofolio/static/media/rex.9e028134c645886dbb1a.jpg",
     "index.html": "/protofolio/index.html",
     "main.db9f4f7c.css.map": "/protofolio/static/css/main.db9f4f7c.css.map",
-    "main.8f06aca2.js.map": "/protofolio/static/js/main.8f06aca2.js.map",
+    "main.9f5df9f6.js.map": "/protofolio/static/js/main.9f5df9f6.js.map",
     "453.235e154e.chunk.js.map": "/protofolio/static/js/453.235e154e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db9f4f7c.css",
-    "static/js/main.8f06aca2.js"
+    "static/js/main.9f5df9f6.js"
   ]
 }

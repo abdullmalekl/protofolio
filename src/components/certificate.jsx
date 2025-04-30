@@ -9,11 +9,18 @@ import soft_skills from './images/soft_skills.jpg';
 import sysAdmin from './images/sysAdmin.jpg';
 import teamwork from './images/teamwork.jpg';
 import iot from './images/IOT.jpg';
+import CG from './images/C_G.jpg';
 
 
 const Certifications = () => {
   return (
     <div className="cwen">
+      <div className="certColumn">
+        <h2 className='CertTitle' style={{marginBottom:'2%'}}>Graduation certificate</h2>
+      <div class="ca">
+  <img id='certImage' class="card-img-top" src={CG} alt="Card cap" />
+</div>
+      </div>
       <div className="certColumn">
         <h2 className='CertTitle' style={{marginBottom:'2%'}}> Design Thinking & Innovation</h2>
       <div class="ca">
@@ -66,12 +73,6 @@ const Certifications = () => {
         <h2 className='CertTitle' style={{marginBottom:'2%'}}>mastering teamwork</h2>
       <div class="ca">
   <img id='certImage' class="card-img-top" src={teamwork} alt="Card cap" />
-</div>
-      </div>
-      <div style={{marginBottom:'1.5%'}} className="certColumn">
-        <h2 className='CertTitle' style={{marginBottom:'2%'}}>Smart Solutions</h2>
-      <div class="ca">
-  <img id='certImage' class="card-img-top" src={iot} alt="Card cap" />
 </div>
       </div>
     </div>
