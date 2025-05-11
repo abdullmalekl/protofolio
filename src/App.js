@@ -2,6 +2,7 @@
 import './App.css';
 import prof from './profile.jfif';
 import wall from './wallpaper.jpg';
+import bg from './bg.jpg';
 import vm from './vm.png';
 import lv from './laravel.jpg';
 import rex from './rex.jpg';
@@ -142,7 +143,7 @@ I am committed to providing practical solutions that help businesses in their di
   <h2 className="video-description">
   E-Tech is a technical educational platform focused on the Internet of Things (IoT).
    It offers training content and practical projects,<br/>
-    along with an integrated cloud environment for real-time device connectivity and control via WebSocket
+    along with an integrated cloud environment for3real-time device connectivity and control via WebSocket
   </h2>
   <div className="flex justify-center">
     <div className="w-full max-w-3xl">

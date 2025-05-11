@@ -10,6 +10,9 @@ import sysAdmin from './images/sysAdmin.jpg';
 import teamwork from './images/teamwork.jpg';
 import iot from './images/IOT.jpg';
 import CG from './images/C_G.jpg';
+import oeca from './images/oeca.png';
+import icip from './images/icip.png';
+import onsa from './images/onsa.png';
 
 
 const Certifications = () => {
@@ -19,6 +22,12 @@ const Certifications = () => {
         <h2 className='CertTitle' style={{marginBottom:'2%'}}>Graduation certificate</h2>
       <div class="ca">
   <img id='certImage' class="card-img-top" src={CG} alt="Card cap" />
+</div>
+      </div>
+      <div className="certColumn">
+        <h2 className='CertTitle' style={{marginBottom:'2%'}}>IOT Smart solutions</h2>
+      <div class="ca">
+  <img id='certImage' class="card-img-top" src={iot} alt="Card cap" />
 </div>
       </div>
       <div className="certColumn">
@@ -75,6 +84,26 @@ const Certifications = () => {
   <img id='certImage' class="card-img-top" src={teamwork} alt="Card cap" />
 </div>
       </div>
+
+      <div className="certColumn">
+        <h2 className='CertTitle' style={{marginBottom:'2%'}}>Critical Infrastructure Protection</h2>
+      <div class="ca">
+  <img id='certImage' class="card-img-top" src={icip} alt="Card cap" />
+</div>
+      </div>
+      <div className="certColumn">
+        <h2 className='CertTitle' style={{marginBottom:'2%'}}>End-point Compliance Associate</h2>
+      <div class="ca">
+  <img id='certImage' class="card-img-top" src={oeca} alt="Card cap" />
+</div>
+      </div>
+      <div className="certColumn">
+        <h2 className='CertTitle' style={{marginBottom:'2%'}}>Network Security Associate</h2>
+      <div class="ca">
+  <img id='certImage' class="card-img-top" src={onsa} alt="Card cap" />
+</div>
+      </div>
+    
     </div>
   );
 };
