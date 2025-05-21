@@ -13,6 +13,7 @@ import CG from './images/C_G.jpg';
 import oeca from './images/oeca.png';
 import icip from './images/icip.png';
 import onsa from './images/onsa.png';
+import CSG from './images/CSG.png';
 
 
 const Certifications = () => {
@@ -101,6 +102,12 @@ const Certifications = () => {
         <h2 className='CertTitle' style={{marginBottom:'2%'}}>Network Security Associate</h2>
       <div class="ca">
   <img id='certImage' class="card-img-top" src={onsa} alt="Card cap" />
+</div>
+      </div>
+      <div className="certColumn">
+        <h2 className='CertTitle' style={{marginBottom:'2%'}}>Foundationd of CyberSecurity</h2>
+      <div class="ca">
+  <img id='certImage' class="card-img-top" src={CSG} alt="Card cap" />
 </div>
       </div>
     
