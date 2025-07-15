@@ -1,16 +1,14 @@
-import React from "react";
-
-const CertificateCard = ({ title, image }) => {
+const CertificateCard = ({ title, image, url }) => {
   return (
-    <div id='Ccards' className="bg-white rounded-4xl shadow-md p-4 w-full transition hover:shadow-lg">
-        <h2 id="cardTitle" className=" font-semibold text-gray-800 text-center">{title}</h2>
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-auto object-contain"
-      />
-      
-    </div>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="certColumn block transition-transform duration-300 hover:scale-105"
+    >
+      <img src={image} alt={title} id="certImage" />
+      <h3 className="CertTitle mt-4">{title}</h3>
+    </a>
   );
 };
 

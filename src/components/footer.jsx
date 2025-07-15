@@ -7,7 +7,9 @@ import {
   
   const Footer = () => {
     return (
-      <footer className="bg-[#1f2937] text-white py-6 text-center">
+      <footer className="bg-[#1f2937] text-white py-6 min-h-[140px] text-center">
+        <br />
+        <br />
         <div className="flex justify-center gap-6 mb-4 text-gray-400 text-2xl">
           <a
             href='https://t.me/Le_Castro_32'
@@ -42,6 +44,7 @@ import {
             <FaLinkedinIn />
           </a>
         </div>
+        <br />
         <p id="endl" className="text-sm text-gray-300">
           © 2023 - 2024 Abdulmalik Khurwat. All rights reserved.
         </p>
