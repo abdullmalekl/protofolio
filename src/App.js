@@ -1,8 +1,7 @@
 
 import './App.css';
 import prof from './profile.jfif';
-import wall from './wallpaper.jpg';
-import bg from './bg.jpg';
+import techCover from './tech-cover.jpg';
 import vm from './vm.png';
 import lv from './laravel.jpg';
 import rex from './rex.jpg';
@@ -13,7 +12,26 @@ import ColumnList from './components/Badgeslist';
 import Footer from './components/footer';
 import figma from './components/images/figma.png';
 import Certifications from './components/certificate';
+import AnimatedBackground from './components/AnimatedBackground';
+import { useEffect, useState } from 'react';
 function App() {
+  const [isVisible, setIsVisible] = useState(false);
+  const [typedText, setTypedText] = useState('');
+  const fullText = "Who am I?";
+
+  useEffect(() => {
+    setIsVisible(true);
+    let index = 0;
+    const timer = setInterval(() => {
+      if (index < fullText.length) {
+        setTypedText(fullText.slice(0, index + 1));
+        index++;
+      } else {
+        clearInterval(timer);
+      }
+    }, 150);
+    return () => clearInterval(timer);
+  }, []);
   
   const items = [
     {
@@ -90,27 +108,31 @@ function App() {
   ]
   return (
     <>
-    <div className="background">
-    <img src={wall} className="wall" alt="wall" />
+    <AnimatedBackground />
+    <div className="tech-background">
+      <div className="particles"></div>
+      <div className="tech-grid"></div>
+      <img src={techCover} className="tech-cover" alt="Technology Background" />
     </div>
     <div className="App">
       <header className="App-header">
-        <img src={prof} className="App-logo" alt="logo" />
-        <p  className='username'>
+        <div className={`profile-container ${isVisible ? 'animate-in' : ''}`}>
+          <img src={prof} className="App-logo" alt="profile" />
+          <div className="profile-glow"></div>
+        </div>
+        <p className={`username ${isVisible ? 'fade-in' : ''}`}>
           Abdulmalik khurwat
         </p>
-        <p  className="text-6xl md:text-8xl font-outfit font-light animate-fadeIn mb-6" id='description'>
-        Who am I?
-      </p>
-      <p className="text-lg md:text-xl font-outfit max-w-2xl text-center animate-fadeIn delay-500" style={{ animationDelay: "2s", animationFillMode: "forwards" }} id='details'>
-      I’m a Solutions Architect and a Software Engineer, specializing in web development and application design. My passion is creating smart solutions that integrate programming, digital infrastructure, and user experience in an efficient and cohesive manner. I have practical experience in both frontend development and managing infrastructure, including Linux, VMware, and Datacenter management. I continuously work on developing web applications using the latest tools and technologies.
+        <p className="typed-text">
+          {typedText}<span className="cursor">|</span>
+        </p>
+        <p className={`bio-text ${isVisible ? 'slide-up' : ''}`}>
+        I'm a Solutions Architect and a Software Engineer, specializing in web development and application design. My passion is creating smart solutions that integrate programming, digital infrastructure, and user experience in an efficient and cohesive manner. I have practical experience in both frontend development and managing infrastructure, including Linux, VMware, and Datacenter management. I continuously work on developing web applications using the latest tools and technologies.
 
 I hold a Bachelor's degree in Internet Technologies from the University of Gharyan, where I graduated with a GPA of 81.
 
 I am committed to providing practical solutions that help businesses in their digital transformation journey, whether by designing new systems or improving existing infrastructures. Additionally, I have expertise in Internet of Things (IoT) technologies and a solid understanding of cybersecurity to ensure safe and robust systems. I believe that continuous learning is key to success in the tech world, and I strive to expand my skills and horizons to make a meaningful impact through my work.
-
-
-      </p>
+        </p>
       </header>
       <div className="popular-section">
   <h2 id='skills' className="section-title">Skills</h2>
