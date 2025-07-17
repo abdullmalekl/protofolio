@@ -14,7 +14,7 @@ import oeca from './images/oeca.png';
 import icip from './images/icip.png';
 import onsa from './images/onsa.png';
 import CSG from './images/CSG.png';
-
+import vmce from './images/vmce.jpg';
 
 const Certifications = () => {
   return (
@@ -108,6 +108,12 @@ const Certifications = () => {
         <h2 className='CertTitle' style={{marginBottom:'2%'}}>Foundationd of CyberSecurity</h2>
       <div class="ca">
   <img id='certImage' class="card-img-top" src={CSG} alt="Card cap" />
+</div>
+      </div>
+       <div className="certColumn">
+        <h2 className='CertTitle' style={{marginBottom:'2%'}}>Veeam Data security</h2>
+      <div class="ca">
+  <img id='certImage' class="card-img-top" src={vmce} alt="Card cap" />
 </div>
       </div>
     
